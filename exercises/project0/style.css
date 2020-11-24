@@ -8,18 +8,75 @@ body {
   background-color: rgb(253, 251, 251);
 }
 
-h2, h3 {
-  margin: 0 0 20px;
-}
-
-p {
-  margin-bottom: 5px;
+#titulo {
+  font-family: monospace;
+  margin-left: 30px;
+  line-height: 2em;
 }
 
 #cabecalho {
-  background-color: rgb(10, 126, 81);
   color: white;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  top: 0;
+  z-index: 4;
   background-image: url(capa.jpeg);
+}
+
+#minha_foto {
+  width: 100px;
+  display: block;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+#licoes_aprendidas {
+  display: inline-block;
+  width: 50%;
+  margin-right: 10px;
+  margin-left: 15px;
+  padding: 15px;
+}
+
+#licoes_a_aprender {
+  display: inline-block;
+  width: 30%;
+  margin-right: 10px;
+  padding: 15px;
+}
+
+#rodape {
+  width: 100%;
+  background-color: rgb(50, 50, 50);
+  color: white;
+  min-height: 80px;
+}
+
+#rodape p {
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+  margin-top: 30px;
+  height: 100%;
+  text-align: center;
+  letter-spacing: 4px;
+  color: gray;
+}
+
+.normal-margin {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.right-main-content {
+  display: inline-block;
+  width: 70%;
+}
+
+.left-main-content {
+  display: inline-block;
+  width: 20%;
 }
 
 .title-container {
@@ -27,8 +84,10 @@ p {
 }
 
 .navigation {
-  background-color: cornflowerblue;
+  height: 30px;
+  background-color: rgb(50, 50, 50);
   padding: 0 30px;
+  z-index: 4;
 }
 
 .navigation ul {
@@ -47,28 +106,28 @@ p {
 }
   
 .content {
-  max-width: 1200px;
+  width: 80%;
+  top: 90px;
   margin: auto;
-  flex-grow: 1;
+  position: relative;
 }
 
 .main-content {
-  width: 66%;
+  width: 80%;
   display: inline-block;
-
 }
 
-.side-bar {
-  background-color: lightgrey;
-  margin: 10px;
-  padding: 20px;
-  width: 200px;
+.lado-direito {
+  text-align: left;
+  width: 20%;
   display: inline-block;
-  vertical-align: top;
+  position: fixed;
+  top: 90px;
 }
 
-.article {
+.lado-esquerdo {
   padding: 15px;
+  text-align: justify;
 }
 
 .article-small {
@@ -78,7 +137,7 @@ p {
   padding: 15px;
 }
 
-.jobs {
+.side-text {
   margin-top: 40px
 }
 
